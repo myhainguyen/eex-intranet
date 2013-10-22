@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 	xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:util="http://www.springframework.org/schema/util"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:security="http://www.springframework.org/schema/security"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+							http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+							http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd
+							http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+	<!-- enable annotation processing for portal-conf -->
+	<context:component-scan base-package="de.eex.intranet.portal.conf" />
+	
+	<!-- 
+		load portal config file
+		The value for "portal.config.file" must be provided as JAVA_OPT to the Liferay portal, see sentenv.sh for that
+	-->
+	<util:properties id="portalProperties" location="file:${EEX_INTRANET_PORTAL_CONFIG_FILE}" />
+	
+	<!--
+		this property placeholder resolves all config keys within the spring files and replaces them
+		with the values found within the external config file 
+	 -->
+	<context:property-placeholder 	properties-ref="portalProperties"
+									system-properties-mode="FALLBACK"
+									ignore-resource-not-found="false" />
+	
+	<!--
+		 Initializes Log4J, path to log config file is taken from "portal.config.file->log.config.file"
+	 -->								
+	<bean 	id="log4jInitialization"
+			class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<property name="targetClass" value="org.springframework.util.Log4jConfigurer" />
+		<property name="targetMethod" value="initLogging" />
+		<property name="arguments">
+			<list>
+				<value>file:${log.config.file}</value>
+			</list>
+		</property>
+	</bean>
+	
+</beans>

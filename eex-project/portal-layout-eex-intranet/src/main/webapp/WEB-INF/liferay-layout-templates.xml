@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE layout-templates PUBLIC "-//Liferay//DTD Layout Templates 6.1.0//EN" "http://www.liferay.com/dtd/liferay-layout-templates_6_1_0.dtd">
+
+<layout-templates>
+	<custom>
+		<layout-template id="eex-intranet-1-column" name="RC 1-spaltig">
+			<template-path>/eex-intranet-1-column.tpl</template-path>
+			<wap-template-path>/eex-intranet-1-column.wap.tpl</wap-template-path>
+			<thumbnail-path>/thumbnail/eex-intranet-1-column.png</thumbnail-path>
+		</layout-template>
+		<layout-template id="eex-intranet-2-columns" name="RC 2-spaltig">
+			<template-path>/eex-intranet-2-columns.tpl</template-path>
+			<wap-template-path>/eex-intranet-2-columns.wap.tpl</wap-template-path>
+			<thumbnail-path>/thumbnail/eex-intranet-2-columns.png</thumbnail-path>
+		</layout-template>
+		<layout-template id="eex-intranet-2-columns-ii" name="RC 2-spaltig (schmal-breit)">
+			<template-path>/eex-intranet-2-columns-ii.tpl</template-path>
+			<wap-template-path>/eex-intranet-2-columns-ii.wap.tpl</wap-template-path>
+			<thumbnail-path>/thumbnail/eex-intranet-2-columns-ii.png</thumbnail-path>
+		</layout-template>
+		<layout-template id="eex-intranet-3-columns" name="RC 3-spaltig">
+			<template-path>/eex-intranet-3-columns.tpl</template-path>
+			<wap-template-path>/eex-intranet-3-columns.wap.tpl</wap-template-path>
+			<thumbnail-path>/thumbnail/eex-intranet-3-columns.png</thumbnail-path>
+		</layout-template>
+	</custom>
+</layout-templates>
