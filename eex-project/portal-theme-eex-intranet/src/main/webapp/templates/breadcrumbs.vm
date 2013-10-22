@@ -1,0 +1,17 @@
+<ul class="breadcrumb">
+	<li><a href="home">Home</a> ></li>
+	#set($ancestors=$themeDisplay.getLayout().getAncestors())
+	
+	#if (!$ancestors.isEmpty())
+		#set ($max = $ancestors.size() - 1)
+		#foreach ( $number in [$max .. 0])
+			#set ($ancestor = $ancestors.get($number))
+			<li>
+				<a href="$portalUtil.getLayoutFriendlyURL($ancestor, $themeDisplay)">
+					$ancestor.getName($themeDisplay.getLocale())
+				</a> >
+			</li>
+		#end 
+	#end
+	<li>$layout.getName($themeDisplay.getLocale())</li>
+</ul>

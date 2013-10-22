@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd
+                        http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd">
+
+	<portlet>
+		<description>Write here a short description about your portlet.</description>
+		<portlet-name>com.eex.intranet.portlet</portlet-name>
+		<display-name>eex intranet</display-name>
+
+		<portlet-class>com.vaadin.terminal.gwt.server.ApplicationPortlet2</portlet-class>
+
+		<init-param>
+			<name>application</name>
+			<value>com.eex.intranet.portlet.ShoutboxPorlet</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>help</portlet-mode>
+		</supports>
+
+
+		<portlet-info>
+			<title>Shoutbox portlet</title>
+			<short-title>Portlet Short Title</short-title>
+			<keywords>put keywords here</keywords>
+		</portlet-info>
+		<portlet-preferences>
+			<preference>
+				<name>portletSetupShowBorders</name>
+				<value>false</value>
+			</preference>
+		</portlet-preferences>
+	</portlet>
+	<portlet>
+		<description>Write here a short description about your portlet.</description>
+		<portlet-name>eic_checker</portlet-name>
+		<display-name>eex intranet</display-name>
+
+		<portlet-class>com.vaadin.terminal.gwt.server.ApplicationPortlet2</portlet-class>
+
+		<init-param>
+			<name>application</name>
+			<value>com.eex.intranet.portlet.EiccheckerPorlet</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>help</portlet-mode>
+		</supports>
+
+
+		<portlet-info>
+			<title>Eic checker portlet</title>
+			<short-title>Portlet Short Title</short-title>
+			<keywords>put keywords here</keywords>
+		</portlet-info>
+		<portlet-preferences>
+			<preference>
+				<name>portletSetupShowBorders</name>
+				<value>false</value>
+			</preference>
+		</portlet-preferences>
+	</portlet>
+	
+	<portlet>
+		<description>Write here a short description about your portlet.</description>
+		<portlet-name>shoutbox_backend</portlet-name>
+		<display-name>eex intranet backend</display-name>
+
+		<portlet-class>com.vaadin.terminal.gwt.server.ApplicationPortlet2</portlet-class>
+
+		<init-param>
+			<name>application</name>
+			<value>com.eex.intranet.portlet.BE_ShowMesgPorlet</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>help</portlet-mode>
+		</supports>
+
+
+		<portlet-info>
+			<title>Backend shoutbox</title>
+			<short-title>Portlet Short Title</short-title>
+			<keywords>put keywords here</keywords>
+		</portlet-info>
+		<portlet-preferences>
+			<preference>
+				<name>portletSetupShowBorders</name>
+				<value>false</value>
+			</preference>
+		</portlet-preferences>
+	</portlet>
+</portlet-app>

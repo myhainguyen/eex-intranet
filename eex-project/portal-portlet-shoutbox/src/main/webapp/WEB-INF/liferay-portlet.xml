@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.1.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_1_0.dtd">
+
+
+<liferay-portlet-app>
+    <portlet>
+        <portlet-name>com.eex.intranet.portlet</portlet-name>
+        <instanceable>false</instanceable>       
+        <ajaxable>false</ajaxable>
+        <header-portlet-css>/VAADIN/themes/css/style.css</header-portlet-css>
+    </portlet>
+    <portlet>
+        <portlet-name>eic_checker</portlet-name>
+        <instanceable>false</instanceable>       
+        <ajaxable>false</ajaxable>
+        <header-portlet-css>/VAADIN/themes/css/style.css</header-portlet-css>
+    </portlet>
+    <portlet>
+        <portlet-name>shoutbox_backend</portlet-name>
+        <control-panel-entry-category>content</control-panel-entry-category>
+        <control-panel-entry-weight>1.0</control-panel-entry-weight>        
+        <instanceable>false</instanceable>       
+        <ajaxable>false</ajaxable>        
+        <header-portlet-css>/VAADIN/themes/css/style.css</header-portlet-css>
+    </portlet>
+</liferay-portlet-app>

@@ -1,0 +1,34 @@
+<ul>
+	#set($counter = 0)
+	#set($size=$nav_item.getChildren().size())
+	#foreach ($nav_child in $nav_item.getChildren())
+		#set ($counter = $counter + 1)
+		#set($clazz="")
+		
+		#if ($counter == $size)
+			#set($clazz=$clazz + " last")
+		#end
+		#if ($nav_child.hasChildren())
+			#set ($clazz=$clazz + " sub")
+		#end
+		<li class="$clazz">
+			<a href="$nav_child.getURL()" $nav_child.getTarget()>$nav_child.getName()</a>
+			#if ($nav_child.hasChildren())
+				#set($sub_counter = 0)
+				#set($sub_size=$nav_child.getChildren().size())
+				<ul>
+				#foreach ($nav_sub_child in $nav_child.getChildren())
+					#set ($sub_counter = $sub_counter + 1)
+					#if ($sub_counter == $sub_size)
+						<li class="last">
+					#else 
+						<li>
+					#end
+					<a href="$nav_sub_child.getURL()">$nav_sub_child.getName()</a>
+					</li>
+				#end
+				</ul>
+			#end
+		</li>
+	#end
+</ul>

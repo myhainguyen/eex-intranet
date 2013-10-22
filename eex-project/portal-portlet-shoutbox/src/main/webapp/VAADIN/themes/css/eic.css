@@ -1,0 +1,67 @@
+.eic_cssContent{
+	float: left;
+	background: none repeat scroll 0 0 white;
+}
+.eic_lblEic{
+	float: left;
+    font-size: 25px !important;
+    padding: 15px;
+    color: #333333 !important;
+}
+.eic_lblArea{
+	float: left;
+    font-size: 20px !important;
+    padding-left: 15px;
+    width: 200px !important;
+    color: #333333 !important;
+}
+.eic_txteic{
+	float: left;
+	width: 180px!important;
+	font-size: 13px !important;	
+	margin-left: 15px;
+	color: #333333;
+	margin-bottom: 3px!important;
+}
+.eic_txteic .v-textfield-prompt{ 
+	font-weight: bold !important;
+}
+.eic_txteic_empty{
+	 border: 1px solid #CC0000 !important;	 
+}
+.eic_display_none{
+	display: none !important;
+}
+
+.eic_btnPrufen{
+	float: right;
+	margin-right: 15px !important; 
+}
+.eic_btnPrufen .v-button-wrap .v-button-caption{	
+	color: #999999;
+    font-size: 13px !important;
+    font-weight: bold;
+}
+.eic_btnPrufen .v-button-wrap{
+	border-radius: 0 0 0 0 !important;
+}
+.eic_cssEic{
+	float:left;
+	width: 100%;
+}
+.eic_lblMesg{
+	float:left;
+	width:100%;	
+	display:none;	
+	font-size:11px!important;
+	padding-left: 15px!important;
+}
+.eic_lblMesg_valid{
+	color: #5DAF54 !important;
+	display: block !important;
+}
+.eic_lblMesg_error{
+	display: block !important;
+	color: #CC0000 !important;
+	
+}

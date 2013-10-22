@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<portlet-app
+    xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+    version="1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd
+                        http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+
+    <portlet>
+        <description>A simple Porlet for using SMS Services</description>
+        <portlet-name>sms_dispatcher</portlet-name>
+        <display-name>eex intranet</display-name>
+
+        <portlet-class>com.vaadin.terminal.gwt.server.ApplicationPortlet2</portlet-class>
+
+        <init-param>
+            <name>application</name>
+            <value>de.eex.intranet.portal.portlet.sms.SmsPortlet</value>
+        </init-param>
+
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>view</portlet-mode>
+            <portlet-mode>edit</portlet-mode>
+            <portlet-mode>help</portlet-mode>
+        </supports>
+
+
+        <portlet-info>
+            <title>SMS Dispatcher portlet</title>
+            <short-title>SMS Dispatcher</short-title>
+            <keywords>sms</keywords>
+        </portlet-info>
+    </portlet>
+</portlet-app>

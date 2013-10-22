@@ -1,0 +1,30 @@
+<div class="container">
+	<a href="#" class="back-top">nach oben</a>
+	<nav id="footer-navigation" class="clearfix">
+		<ul class="clearfix">
+    		#foreach ($nav_item in $nav_items)
+    			#if ($nav_item.getName().toLowerCase().equals("home"))
+    				<li class="home">
+    			#else
+    				<li>
+    			#end
+						<a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $nav_item.getName()</span></a>
+					</li>
+			#end
+    	</ul>
+    	<ul class="sub-nav">
+    	 	<li>
+			   	<a href="$layout.getGroup().getExpandoBridge().getAttribute('link_help_page')">
+			   		$layout.getGroup().getExpandoBridge().getAttribute("help_page")
+			  	</a>
+			</li>
+			#if ($is_signed_in)
+			<li>
+			   	<a href="$layout.getGroup().getExpandoBridge().getAttribute('link_feedback_page')">
+			   		$layout.getGroup().getExpandoBridge().getAttribute("feedback_page")
+			  	</a>
+			</li>
+			#end
+    	</ul>
+	</nav>
+</div>

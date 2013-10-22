@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plugin-package PUBLIC "-//Liferay//DTD Plugin Package 6.0.0//EN" "http://www.liferay.com/dtd/liferay-plugin-package_6_0_0.dtd">
+<!--
+	=================================================================== 
+	GRUNDSYSTEM
+	=================================================================== 
+-->
+<plugin-package>
+	<name>portal-portlet-hotnews</name>
+	<module-id>eex-intranet/portal-portlet-hotnews/${project.version}/war</module-id>
+	<types>
+		<type>portlet</type>
+	</types>
+	<page-url>http://www.eex.com</page-url>
+	<author>EWERK IT GmbH</author>
+	<licenses>
+		<license osi-approved="true">Proprietary</license>
+	</licenses>
+	<liferay-versions>
+		<liferay-version>6.1.0+</liferay-version>
+	</liferay-versions>
+</plugin-package>

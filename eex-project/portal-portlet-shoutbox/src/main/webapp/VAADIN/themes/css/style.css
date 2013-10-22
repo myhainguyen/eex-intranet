@@ -1,0 +1,13 @@
+/* @import url(../reindeer/styles.css); */
+
+@IMPORT url("shoutbox.css");
+@IMPORT url("eic.css");
+.cssContent{
+	float:left;
+}
+.scrumtable{
+	float:left;
+}
+.cssAdd{
+	float:left;
+}

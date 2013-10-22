@@ -1,0 +1,169 @@
+.shoutbox_mainWindow{
+	float: left;
+}
+.shoutbox_mainWindow .v-label{
+	color: #333333;
+	font-size: 13px;
+	font-family: arial;
+}
+
+.shoutbox_cssContent{
+	float: left;
+	background: none repeat scroll 0 0 white;
+	
+}
+.shoutbox_vrlayout{
+	float: left;
+}
+.shoutbox_lblShoutbox{
+	height: auto !important;
+	margin-bottom: 5px;
+}
+.shoutbox_cssSenden{
+	padding-top: 10px;    
+   
+}
+
+.shoutbox_lblShoutbox{ 
+	float: left;
+    font-size: 25px !important;
+    padding: 15px;
+    color: #333333 !important;
+}
+.shoutbox_lblShoutbox{
+  font-size: 25px !important;
+  padding: 15px;
+  color: #333333 !important;
+
+}
+.shoutbox_txtMesg{
+	width: 190px!important;
+	font-size: 13px !important;	
+	margin-left: 15px;
+	margin-bottom:10px!important; 
+	color: #333333;
+}
+.shoutbox_cssSenden .v-textfield-prompt{
+	font-weight: bold !important;
+}
+.shoutbox_txtMesgEmpty{
+	 border: 1px solid #CC0000 !important;
+	 
+}
+.shoutbox_btnSenden{
+	float: right;
+	margin-right: 15px !important; 
+}
+.shoutbox_btnSenden .v-button-wrap .v-button-caption{	
+	color: #999999;
+    font-size: 13px !important;
+    font-weight: bold;
+}
+.shoutbox_btnSenden .v-button-wrap{
+	border-radius: 0 0 0 0 !important;
+}
+.shoutbox_table .v-table-header-wrap{
+	display: none;
+}
+.shoutbox_table .v-table-body{
+	border: medium none !important;
+	
+}
+.shoutbox_table .v-table-body .v-table-row-odd ,
+.shoutbox_table .v-table-body .v-table-row{
+	background: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.shoutbox_table .v-table-cell-content{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.shoutbox_cssItem{
+	float: left;    
+    border-top: 1px solid #D0D0D0;
+    padding: 10px 15px 2px 5px;
+}
+.shoutbox_name{
+	float:left;
+	color: #333333 !important;
+	font-size: 13px !important;
+	font-weight: bold;
+	width: 253px!important;
+	padding-left: 25px;
+}
+.shoutbox_name p{
+	float: left;
+	font-weight: normal;
+	margin: 0!important;
+	padding: 0;
+}
+.shoutbox_itemContent{
+	float:left;
+	color:#333333;
+	font-size: 13px !important;
+	max-width: 280px;
+	white-space: normal!important;
+	padding-left: 25px;
+}
+.shoutbox_lblMesg{
+	float:left;
+	width:100%;	
+	display:none !important;	
+	padding-left: 15px!important;
+	white-space: normal;
+	font-size: 11px!important;
+	
+}
+.shoutbox_lblMesg_display{
+	display: block !important;
+	color: #CC0000 !important;
+	
+}
+.shoutbox_edit_lbl{
+	float:left;
+	
+}
+.v-caption-shoutbox_txtMesg{
+	float:left;
+	font-size: 13px;
+	color: #333333;
+	padding-left: 15px;
+}
+.v-nativebutton-shoutbox_del{
+	left:5px;
+	border-radius: 0;
+	width: 18px;
+	margin: 0!important;
+	height: 18px !important;	
+	padding: 0 !important;
+	background: url("/portal-portlet-shoutbox/images/delete.png")!important;
+	position: absolute;
+}
+.v-nativebutton-shoutbox_del .v-nativebutton-caption{
+	font-size: 13px;
+}
+.shoutbox_cssItem:HOVER, .v-nativebutton-shoutbox_del:active {
+	display: block !important;
+}
+.v-nativebutton-shoutbox_admin_del{
+	float: left;
+	border-radius: 0;
+	width: 18px;
+	margin: 0!important;
+	height: 18px !important;	
+	padding: 0 !important;
+	background: url("/portal-portlet-shoutbox/images/delete.png")!important;
+}
+.shoutbox_tableMesg .v-table-cell-wrapper{
+	white-space: normal !important;
+}
+.shoutbox_lblError{
+	float:left;
+	color: #CC0000 !important;
+	margin-left: 15px;
+	font-size: 11px;
+}
+.shoutbox_success{
+	color: #5DAF54 !important;	
+}

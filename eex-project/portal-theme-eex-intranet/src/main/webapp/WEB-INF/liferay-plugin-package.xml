@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plugin-package PUBLIC "-//Liferay//DTD Plugin Package 6.0.0//EN" "http://www.liferay.com/dtd/liferay-plugin-package_6_0_0.dtd">
+<plugin-package>
+	<name>EEX Intranet</name>
+	<module-id>eex-intranet/portal-theme-eex-intranet/${project.version}/war</module-id>
+	<types>
+		<type>theme</type>
+	</types>
+	<page-url>http://www.eex.com</page-url>
+	<author>EWERK IT GmbH</author>
+	<licenses>
+	</licenses>
+	<liferay-versions>
+		<liferay-version>6.1.0+</liferay-version>
+	</liferay-versions>
+</plugin-package>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 	version="2.4" 
+			xmlns="http://java.sun.com/xml/ns/j2ee"
+ 			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 			xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+			id="de.regiocast.portal.services.provider">
+
+	<display-name>REGIOCAST Services Provider</display-name>
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>de.regiocast.portal.services.provider</param-value>
+	</context-param>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:/spring/portal-services-provider.xml</param-value>
+	</context-param>
+ 	<servlet-mapping>
+		<servlet-name>portalservicesprovider Servlet</servlet-name>
+		<url-pattern>/portal-services-provider/*</url-pattern>
+	</servlet-mapping>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+	<session-config>
+		<session-timeout>-1</session-timeout>
+	</session-config>
+</web-app>

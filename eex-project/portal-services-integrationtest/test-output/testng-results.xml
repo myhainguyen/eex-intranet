@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="588" started-at="2013-10-09T04:22:59Z" finished-at="2013-10-09T04:22:59Z">
+    <groups>
+      <group name="SERVICES_INTEGRATION_TEST_GROUP">
+        <method signature="UserInformationServiceIntegrationTest.testDeleteUserInformation()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="testDeleteUserInformation" class="de.eex.intranet.portal.services.UserInformationServiceIntegrationTest"/>
+        <method signature="UserInformationServiceIntegrationTest.testGetUserInformationByName()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="testGetUserInformationByName" class="de.eex.intranet.portal.services.UserInformationServiceIntegrationTest"/>
+        <method signature="UserInformationServiceIntegrationTest.testInsertUserInformation()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="testInsertUserInformation" class="de.eex.intranet.portal.services.UserInformationServiceIntegrationTest"/>
+        <method signature="UserInformationServiceIntegrationTest.testInsertUserInformationList()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="testInsertUserInformationList" class="de.eex.intranet.portal.services.UserInformationServiceIntegrationTest"/>
+        <method signature="UserInformationServiceIntegrationTest.testLimitedUserInformations()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="testLimitedUserInformations" class="de.eex.intranet.portal.services.UserInformationServiceIntegrationTest"/>
+      </group> <!-- SERVICES_INTEGRATION_TEST_GROUP -->
+    </groups>
+    <test name="Default test" duration-ms="588" started-at="2013-10-09T04:22:59Z" finished-at="2013-10-09T04:22:59Z">
+      <class name="de.eex.intranet.portal.services.UserInformationServiceIntegrationTest">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="1417" started-at="2013-10-09T11:22:57Z" finished-at="2013-10-09T11:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="1" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void de.eex.intranet.portal.services.UserInformationServiceIntegrationTest.testInsertUserInformationList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="testInsertUserInformationList()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="testInsertUserInformationList" duration-ms="328" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInsertUserInformationList -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void de.eex.intranet.portal.services.UserInformationServiceIntegrationTest.testInsertUserInformationList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void de.eex.intranet.portal.services.UserInformationServiceIntegrationTest.testInsertUserInformation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="testInsertUserInformation()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="testInsertUserInformation" duration-ms="67" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInsertUserInformation -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void de.eex.intranet.portal.services.UserInformationServiceIntegrationTest.testLimitedUserInformations()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void de.eex.intranet.portal.services.UserInformationServiceIntegrationTest.testInsertUserInformation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="testLimitedUserInformations()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="testLimitedUserInformations" duration-ms="28" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLimitedUserInformations -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void de.eex.intranet.portal.services.UserInformationServiceIntegrationTest.testLimitedUserInformations()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="testGetUserInformationByName()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="testGetUserInformationByName" duration-ms="48" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserInformationByName -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void de.eex.intranet.portal.services.UserInformationServiceIntegrationTest.testGetUserInformationByName()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void de.eex.intranet.portal.services.UserInformationServiceIntegrationTest.testGetUserInformationByName()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void de.eex.intranet.portal.services.UserInformationServiceIntegrationTest.testDeleteUserInformation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="testDeleteUserInformation()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="testDeleteUserInformation" duration-ms="101" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserInformation -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void de.eex.intranet.portal.services.UserInformationServiceIntegrationTest.testDeleteUserInformation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:de.eex.intranet.portal.services.UserInformationServiceIntegrationTest@3047411c]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2013-10-09T11:22:59Z" finished-at="2013-10-09T11:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- de.eex.intranet.portal.services.UserInformationServiceIntegrationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,166 @@
+.hotnews-portlet{
+	border: none!important;
+	margin-top: 0 !important;
+}
+#RC1-column-full .portlet-body{
+	width: 1165px !important;
+	margin: 0 auto !important;
+}
+#RC1-column-full .portlet-dropzone{
+	background-image: linear-gradient(bottom, #f2f2f2 0%, #fcfcfc 100%);
+	background-image: -o-linear-gradient(bottom, #f2f2f2 0%, #fcfcfc 100%);
+	background-image: -moz-linear-gradient(bottom, #f2f2f2 0%, #fcfcfc 100%);
+	background-image: -webkit-linear-gradient(bottom, #f2f2f2 0%, #fcfcfc 100%);
+	background-image: -ms-linear-gradient(bottom, #f2f2f2 0%, #fcfcfc 100%);
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #f2f2f2), color-stop(1, #fcfcfc) );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f2f2f2');
+	margin-bottom: 35px;
+	padding-top: 0 !important;
+}
+.columns-1-2{
+	max-width: 1165px;
+	margin: 0 auto;
+}
+.v-app-HotNewsApplication {
+	max-width: 1165px;
+	margin: 0 auto;
+}
+.single-teaser.information-panel { 
+	position: absolute!important; 
+	top: 20px; 
+	left: 295px; }
+
+.information-panel .bx-viewport, .information-panel ul.slider{
+	position:absolute !important;
+	bottom: 50px;
+}
+
+.information-panel .bx-viewport li{
+	width: 245px!important;
+}
+
+.information-table .v-label{
+	padding-bottom:10px
+}
+.information-panel .v-csslayout{
+	border-left: 5px solid red
+}
+.information-panel li .link{
+	padding: 9px 5px 8px 0;
+	background: red;
+	margin-bottom: -9px
+}
+
+.ie .information-panel li .link{
+	padding: 9px 5px 10px 0;
+	margin-bottom: -10px
+}
+.information-panel li .v-button-caption{
+	color: #ccc!important;
+	text-decoration:none;
+	line-height: 14px!important;
+}
+	
+.information-panel li .v-label {
+	display:inline;
+	padding: 5px;
+	white-space: pre-wrap;
+	background: red;
+}
+
+.calendar-content{
+	height: 185px;
+	width: 285px;
+}
+.calendar-content table{
+	height: 200px!important;
+	border: none !important
+}
+.calendar-content .taglib-calendar {
+	width: 285px !important;
+	position: absolute;
+	bottom:0
+}
+.calendar-content .taglib-calendar tr td a {
+	height: 25px !important;
+	text-decoration: none
+}
+.calendar-content .calendar-current-day a{
+	border: none!important
+}
+
+.taglib-calendar tr.portlet-section-header th, .taglib-calendar tr td {
+  border: none !important;
+}
+
+.results-header { background: none !important }
+.results-header th {
+  background: #EFEFEF; /* Old browsers */
+  background: -moz-linear-gradient(top, #EFEFEF 0%, #DDDDDD 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EFEFEF),color-stop(100%, #DDDDDD) ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #EFEFEF 0%, #DDDDDD 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #EFEFEF 0%, #DDDDDD 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #EFEFEF 0%, #DDDDDD 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #EFEFEF 0%, #DDDDDD 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EFEFEF', endColorstr='#DDDDDD', GradientType=0 ); /* IE6-9 */
+  border-top: 2px solid #e0e0e0 !important;
+}
+.calendar-row { background: none !important }
+.calendar-row td { background: #F2F2F2 !important }
+
+.calendar-content td.calendar-inactive{
+	padding-top: 0px;
+	background: #fff !important;
+}
+
+.calendar-content .current-date{
+	text-align:center;
+	font-weight: bold;
+	color: #000
+}
+.calendar-content span.days{
+	color: #666;
+	font-weight: normal;
+	text-decoration: underline;
+}
+.taglib-calendar .has-events.calendar-current-day a span{
+	background: url(/portal-theme-regiocast/images/calendar/event_indicator.png) no-repeat 50% 95%!important;
+}
+.calendar-panel .taglib-calendar .v-button-caption{
+	font-weight: normal;
+	color: #666;
+	text-decoration: underline;
+}
+.single-teaser.calendar-panel{
+	position:absolute!important;
+	top: 20px;
+	left: 590px;
+	background: #fff
+}
+.single-teaser.news{
+	left: 0!important;
+}
+
+.calevent-popup{
+	min-height: 150px;
+	text-align:center;
+}
+
+.calevent-popup .calevent-msg, .calevent-popup .v-table{
+	min-height:120px;
+}
+
+.calendar-row td:hover{
+	background: #ddd;	
+}
+.calendar-row td{
+	border-right: 1px solid white!important;
+}
+
+.hotnews-backend .v-table-cell-wrapper{
+	white-space:normal !important
+}

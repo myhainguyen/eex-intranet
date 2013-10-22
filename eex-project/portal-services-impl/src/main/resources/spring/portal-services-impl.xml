@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+
+
+       						http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+                           	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+	
+	<import resource="classpath:/spring/portal-conf.xml" />
+   
+    <!--
+		Needed to inject spring-managed beans into non spring-managed classes 
+	 -->
+    <context:spring-configured />
+    
+    <context:component-scan base-package="de.eex.intranet.portal" />
+    
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName">
+			<value>${eexdb.driver.class}</value>
+		</property>
+		<property name="url">
+			<value>${eexdb.url}</value>
+		</property>
+		<property name="username">
+			<value>${eexdb.user}</value>
+		</property>
+		<property name="password">
+			<value>${eexdb.pass}</value>
+		</property>
+	</bean>
+
+
+	
+	<!-- HIBERNATE SESSION FACTORY -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${eexdb.hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${eexdb.hibernate.show_sql}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${eexdb.hibernate.hbm2ddl.auto}</prop>
+			</props>
+		</property>
+		<property name="packagesToScan" value="de.eex.intranet.portal.model" />
+	</bean>
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<tx:annotation-driven />
+	<!-- 
+		========================================================================================
+		Message-Source
+		========================================================================================
+	 -->
+    <bean 	name="messageSource"
+			class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename">
+			<value>messages/messages</value>
+		</property>
+	</bean>	
+</beans>

@@ -1,0 +1,38 @@
+<nav class="main $nav_css_class" id="navigation">
+	<div class="clearfix">
+		<ul class="clearfix">
+			#set ($item_counter = 0)
+			#set ($item_size=$nav_items.size())
+			#foreach ($nav_item in $nav_items)
+				#set ($item_counter = $item_counter + 1)
+				#set ($clazz="")
+				
+				#if ($item_counter == $item_size)
+					#set ($clazz=$clazz + " last")
+				#end
+				#if ($nav_item.hasChildren())
+					#set ($clazz=$clazz + " sub")
+				#end
+				#if ($nav_item.getName().toLowerCase().equals("home"))
+					#if ($nav_item.isSelected())
+						<li class="active home">
+					#else
+						<li class="home">
+					#end
+				#else
+					#if ($nav_item.isSelected())
+						<li class="$clazz active">
+					#else
+						<li class="$clazz">
+					#end
+				#end
+					
+					<a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $nav_item.getName()</span></a>
+					#if ($nav_item.hasChildren())
+						#parse ("$full_templates_path/navigation_sub.vm")
+					#end
+				</li>
+			#end
+		</ul>
+	</div>
+</nav>
